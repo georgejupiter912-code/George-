@@ -1,0 +1,395 @@
+{
+  "runSettings": {
+    "temperature": 1.0,
+    "model": "models/gemini-3.8-flash",
+    "topP": 0.95,
+    "topK": 64,
+    "maxOutputTokens": 65536,
+    "safetySettings": [{
+      "category": "HARM_CATEGORY_HARASSMENT",
+      "threshold": "OFF"
+    }, {
+      "category": "HARM_CATEGORY_HATE_SPEECH",
+      "threshold": "OFF"
+    }, {
+      "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+      "threshold": "OFF"
+    }, {
+      "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+      "threshold": "OFF"
+    }],
+    "enableCodeExecution": false,
+    "enableSearchAsATool": true,
+    "enableBrowseAsATool": false,
+    "thinkingBudget": -1,
+    "googleSearch": {
+    },
+    "thinkingLevel": "THINKING_MEDIUM",
+    "enableImageSearch": false,
+    "enableGoogleMaps": false,
+    "enableAgentThinkingSummariesControl": false,
+    "enableAgentVisualizationControl": false,
+    "enableAgentCollaborativePlanningControl": false,
+    "enableWordTimestamps": false,
+    "enableSpeakerDiarization": false,
+    "enablePolishedTranscript": false
+  },
+  "systemInstruction": {
+  },
+  "chunkedPrompt": {
+    "chunks": [{
+      "text": "AIzaSyCqQFDfjdGICQPvgH68d3KFxQ7pRYgOppc",
+      "role": "user",
+      "tokenCount": 28,
+      "createTime": "2026-10-21T09:35:14.649Z"
+    }, {
+      "text": "**Identifying the Key**\n\nI\u0027ve got the input string, `AIzaSyCqQFDfjdGICQPvgH68d3KFxQ7pRYgOppc`, and I\u0027m zeroing in on a pattern. The start, `AIzaSy...`, looks awfully familiar, and the length, 39 characters, points toward a Google or Firebase API key, I think. Time to dig deeper.\n\n\n**Analyzing the API Key**\n\nI\u0027ve determined the likely intent; the user probably pasted the key accidentally or to get its purpose explained. My security guidelines are formulated: I\u0027ll recognize it as a Google API key and warn the user. I\u0027ll advise a key regeneration immediately and avoid any actions that could validate or compromise its security. The response draft is shaping up, I plan to start with a clear disclosure of the key\u0027s format and a strong security warning.\n\n\n",
+      "role": "model",
+      "tokenCount": 470,
+      "isThought": true,
+      "parts": [{
+        "text": "**Identifying the Key**\n\nI\u0027ve got the input string, `AIzaSyCqQFDfjdGICQPvgH68d3KFxQ7pRYgOppc`, and I\u0027m zeroing in on a pattern. The start, `AIzaSy...`, looks awfully familiar, and the length, 39 characters, points toward a Google or Firebase API key, I think. Time to dig deeper.\n\n\n",
+        "thought": true
+      }, {
+        "text": "**Analyzing the API Key**\n\nI\u0027ve determined the likely intent; the user probably pasted the key accidentally or to get its purpose explained. My security guidelines are formulated: I\u0027ll recognize it as a Google API key and warn the user. I\u0027ll advise a key regeneration immediately and avoid any actions that could validate or compromise its security. The response draft is shaping up, I plan to start with a clear disclosure of the key\u0027s format and a strong security warning.\n\n\n",
+        "thought": true
+      }],
+      "createTime": "2026-10-21T09:35:14.651Z"
+    }, {
+      "text": "The string you provided matches the format of a **Google API key** (commonly used for Google Cloud services, Firebase, Google Maps, or the Gemini API).\n\n### ⚠️ Security Warning\nIf this is an active key belonging to you or your organization, **it is now potentially compromised** because it has been pasted into an external chat interface.\n\n### Recommended Actions:\n1. **Revoke/Rotate the Key Immediately:**\n   * Go to the [Google Cloud Console Credentials page](https://console.cloud.google.com/apis/credentials) (or your Firebase Console).\n   * Locate this key, delete it, and generate a new one.\n2. **Apply Key Restrictions:**\n   * Restrict any new keys by **API restrictions** (only allow the specific services your app needs).\n   * Restrict by **Application restrictions** (limit usage to specific IP addresses, HTTP referrers, or Android/iOS apps).\n3. **Check Usage \u0026 Billing:**\n   * Review your API usage metrics and billing dashboard to ensure no unauthorized requests were made.",
+      "role": "model",
+      "finishReason": "STOP",
+      "tokenCount": 224,
+      "parts": [{
+        "text": "The string you provided matches the format of a **Google API"
+      }, {
+        "text": " key** (commonly used for Google Cloud services, Firebase, Google Maps, or the Gemini API).\n\n### ⚠️ Security Warning\nIf this"
+      }, {
+        "text": " is an active key belonging to you or your organization, **it is now potentially compromised** because it has been pasted into an"
+      }, {
+        "text": " external chat interface.\n\n### Recommended Actions:\n1. **Revoke/Rotate the Key Immediately:**\n   * Go to the"
+      }, {
+        "text": " [Google Cloud Console Credentials page](https://console.cloud.google.com/apis/credentials) (or your"
+      }, {
+        "text": " Firebase Console).\n   * Locate this key, delete it, and generate a new one.\n2. **Apply"
+      }, {
+        "text": " Key Restrictions:**\n   * Restrict any new keys by **API restrictions** (only allow the specific services your app needs)."
+      }, {
+        "text": "\n   * Restrict by **Application restrictions** (limit usage to specific IP addresses, HTTP referrers, or Android"
+      }, {
+        "text": "/iOS apps).\n3. **Check Usage \u0026 Billing:**\n   * Review your API usage metrics and billing dashboard to ensure no unauthorized requests"
+      }, {
+        "text": " were made."
+      }, {
+        "text": "",
+        "thoughtSignature": "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"
+      }],
+      "createTime": "2026-10-21T09:35:22.674Z"
+    }, {
+      "text": "AIzaSyCqQFDfjdGICQPvgH68d3KFxQ7pRYgOppc",
+      "role": "user",
+      "tokenCount": 28,
+      "createTime": "2026-10-21T09:37:17.218Z"
+    }, {
+      "text": "**Analyzing API Key Behavior**\n\nI\u0027m currently investigating the repeated posting of the Google API key. My initial thought is to determine if this is a deliberate test of my responses or a genuine error. I\u0027m checking if this key is known to be in any public repositories or code repositories. I want to understand the rationale behind this repetitive action before I proceed.\n\n\n**Analyzing Key Source**\n\nI\u0027ve determined there are no public index results matching that key, so I\u0027m concluding it\u0027s either private, a test key, or part of a test setup. I\u0027m preparing a concise response that clearly states the key\u0027s a Google API key and offers assistance if they have specific questions about its usage.\n\n\n",
+      "role": "model",
+      "tokenCount": 224,
+      "isThought": true,
+      "parts": [{
+        "text": "**Analyzing API Key Behavior**\n\nI\u0027m currently investigating the repeated posting of the Google API key. My initial thought is to determine if this is a deliberate test of my responses or a genuine error. I\u0027m checking if this key is known to be in any public repositories or code repositories. I want to understand the rationale behind this repetitive action before I proceed.\n\n\n",
+        "thought": true
+      }, {
+        "text": "**Analyzing Key Source**\n\nI\u0027ve determined there are no public index results matching that key, so I\u0027m concluding it\u0027s either private, a test key, or part of a test setup. I\u0027m preparing a concise response that clearly states the key\u0027s a Google API key and offers assistance if they have specific questions about its usage.\n\n\n",
+        "thought": true
+      }],
+      "createTime": "2026-10-21T09:37:17.218Z"
+    }, {
+      "text": "You have sent the same string again, which is formatted as a **Google API key**.\n\nIf you have a specific question about API keys (for example, how to authenticate a request, configure key restrictions, or set up environment variables in your code), please feel free to ask. \n\nHowever, if this is an actual, active key from your Google Cloud or Firebase project:\n* **Do not continue sharing it.**\n* Go to the [Google Cloud Console](https://console.cloud.google.com/apis/credentials) immediately to **delete and regenerate** it, as pasting credentials into chat interfaces compromises their security.",
+      "role": "model",
+      "finishReason": "STOP",
+      "tokenCount": 129,
+      "parts": [{
+        "text": "You have sent the same string again, which is formatted as a **Google API key**.\n\nIf you have"
+      }, {
+        "text": " a specific question about API keys (for example, how to authenticate a request, configure key restrictions, or set up environment"
+      }, {
+        "text": " variables in your code), please feel free to ask. \n\nHowever, if this is an actual, active key from"
+      }, {
+        "text": " your Google Cloud or Firebase project:\n* **Do not continue sharing it.**\n* Go to the"
+      }, {
+        "text": " [Google Cloud Console](https://console.cloud.google.com/apis/credentials) immediately to **delete and regenerate** it, as pasting"
+      }, {
+        "text": " credentials into chat interfaces compromises their security."
+      }, {
+        "text": "",
+        "thoughtSignature": "EtQECtEEAWkUfRO0YL5eEqTXAiREHJeMmHoGwzk7/TQGW4Lrqz0LphcJAZBgQUDbb++utIua0EccuLpbcdqFR28i81gW1G4ISXXB/UJpigEC6evL/KEglTm07X/K8Sm9F/eJo2XGFsDxNO+xpkNdnn8Of5ba2/eEgGRJxgbXQsHNM61Ydn9SHFhrCUz3nWazrdppRVjDgX9yNIYj1CPY9P2viIyZdfnAaPAl8AX3G7P7Ls64bj6sgwqW0IUUDPhbwv6IZMjBtUX8EW6XouLBJxtZcUbFnhXkx61CKlAaW8MFJxm6wFMgwjJZeEU1wS4pfpRTUYMZKxjAhJw/TINPjxPnbd+Qke3z7Oclm9sDYFH5+CPT0IJyx/Aa1JrzxrFKVTA117d8YC61rsV/bfjqucqBjoFFy/H9RUitfwh8zqcDOedeb8sIQVXCBcXhrTfF5evS1AU5TLtUzcZl2hXGOZYcFT3itnL88bNrSC1TDb+UUY/cmldel9phatntt1q7Ub80ibxyxdMKl3Dvg4MBPlTRVnCAG8JrkiF/5lI3oCSc83X8hcLpfoXUqqt9oCFBKAtcUGu58mVZooiDesubVJMu603zNcbAFo5THP2gYv0PDbVZGkWer/YQlTMJznnM3Tz3OeaWzjj7pag3sKWg29e0gJDRRkGoFFbqbsCQU812r5/LcNhHZ/RUavGwJvMgG3PzInoQy+0dwLf551/+ZhCifICK3fl4YJiNCZLmfkMZXjjanLofGy4sN3vN6gpPESZ1YW4Kh4NgfS2O2o9iy6y4tXimMzs="
+      }],
+      "createTime": "2026-10-21T09:37:24.120Z"
+    }, {
+      "text": "Upgrade my Jupiter Ai to as an online Ai service, involving Education, daily life questions and science,",
+      "role": "user",
+      "tokenCount": 21,
+      "createTime": "2026-10-21T09:40:49.184Z"
+    }, {
+      "text": "**Analyzing User\u0027s Intent**\n\nI\u0027m now zeroing in on the user\u0027s core need: transforming their \"Jupiter Ai\" into an online AI service spanning education, daily life, and science. The previous Google API key input seems like a past step, probably unrelated to this broader goal. The main focus is the user\u0027s desire to upgrade their AI\u0027s capabilities.\n\n\n**Defining the AI Service**\n\nI\u0027m now clarifying the user\u0027s need; it involves evolving their \"Jupiter AI\" into a web-based AI service with educational, daily life, and scientific applications. The Google API key confirms the use of Google\u0027s Gemini API. My focus is now on the architectural blueprint for this online service. I\u0027m moving beyond just the key, and working to define the necessary system architecture.\nI\u0027m also considering the ideal tech stack.\n\n\n**Outlining Core Components**\n\nI\u0027m now focusing on the key structural elements for the web service. It includes frontend design (responsive chat UI with HTML, CSS, JavaScript), the \"Jupiter AI\" persona (specializing in education, science, and daily life), and how to configure the system prompt. I\u0027m also planning the architectural overview, encompassing environment setup (secure API key), and backend code with FastAPI using the `google-genai` or `google-generativeai` package.\n\n\n",
+      "role": "model",
+      "tokenCount": 905,
+      "isThought": true,
+      "parts": [{
+        "text": "**Analyzing User\u0027s Intent**\n\nI\u0027m now zeroing in on the user\u0027s core need: transforming their \"Jupiter Ai\" into an online AI service spanning education, daily life, and science. The previous Google API key input seems like a past step, probably unrelated to this broader goal. The main focus is the user\u0027s desire to upgrade their AI\u0027s capabilities.\n\n\n",
+        "thought": true
+      }, {
+        "text": "**Defining the AI Service**\n\nI\u0027m now clarifying the user\u0027s need; it involves evolving their \"Jupiter AI\" into a web-based AI service with educational, daily life, and scientific applications. The Google API key confirms the use of Google\u0027s Gemini API. My focus is now on the architectural blueprint for this online service. I\u0027m moving beyond just the key, and working to define the necessary system architecture.\nI\u0027m also considering the ideal tech stack.\n\n\n",
+        "thought": true
+      }, {
+        "text": "**Outlining Core Components**\n\nI\u0027m now focusing on the key structural elements for the web service. It includes frontend design (responsive chat UI with HTML, CSS, JavaScript), the \"Jupiter AI\" persona (specializing in education, science, and daily life), and how to configure the system prompt. I\u0027m also planning the architectural overview, encompassing environment setup (secure API key), and backend code with FastAPI using the `google-genai` or `google-generativeai` package.\n\n\n",
+        "thought": true
+      }],
+      "createTime": "2026-10-21T09:40:49.185Z"
+    }, {
+      "text": "To transform **Jupiter AI** into a full-fledged, public online AI service specializing in **Education, Science, and Daily Life**, you need three core layers:\n\n1. **AI Brain \u0026 Persona:** A system prompt that instructs the model to excel in tutoring, scientific explanation, and practical daily advice.\n2. **Backend Server:** An API (using Python \u0026 FastAPI) that securely connects to your Google Gemini API key without exposing it to users.\n3. **Frontend Web Interface:** A responsive chat UI accessible from any phone or computer browser.\n4. **Cloud Deployment:** Hosting it online (e.g., Render, Railway, or Vercel).\n\nHere is a complete, production-ready blueprint to build and launch Jupiter AI.\n\n---\n\n### Step 1: Project Folder Structure\n\nCreate a folder named `jupiter-ai` on your computer:\n\n```text\njupiter-ai/\n│\n├── .env                  # Stores your secret Google API key\n├── main.py               # Backend API server (FastAPI)\n├── requirements.txt      # Python dependencies\n└── static/\n    └── index.html        # Web chat interface\n```\n\n---\n\n### Step 2: Set Up Dependencies \u0026 Environment Variables\n\n1. Inside `requirements.txt`:\n```txt\nfastapi\nuvicorn\ngoogle-generativeai\npython-dotenv\n```\n\n2. Inside `.env` (**Put your regenerated Google API key here — never commit this file to public GitHub**):\n```env\nGEMINI_API_KEY\u003dyour_regenerated_google_api_key_here\n```\n\n---\n\n### Step 3: Backend Server (`main.py`)\n\nThis code configures **Jupiter AI’s persona** for Education, Science, and Daily Life, and exposes an endpoint for your web interface.\n\n```python\nimport os\nfrom fastapi import FastAPI, HTTPException\nfrom fastapi.middleware.cors import CORSMiddleware\nfrom fastapi.staticfiles import StaticFiles\nfrom pydantic import BaseModel\nfrom dotenv import load_dotenv\nimport google.generativeai as genai\n\n# Load environment variables\nload_dotenv()\napi_key \u003d os.getenv(\"GEMINI_API_KEY\")\n\nif not api_key:\n    raise ValueError(\"GEMINI_API_KEY is missing from .env file\")\n\ngenai.configure(api_key\u003dapi_key)\n\n# Define Jupiter AI\u0027s specialized system instruction\nSYSTEM_INSTRUCTION \u003d \"\"\"\nYou are Jupiter AI, an advanced, empathetic, and engaging AI assistant. \nYour core pillars are:\n\n1. Education:\n   - Act as an encouraging tutor.\n   - Break down complex subjects into simple, bite-sized analogies.\n   - Provide step-by-step problem-solving rather than just direct answers.\n   - Tailor explanations to the user\u0027s level (student, professional, or curious beginner).\n\n2. Science:\n   - Deliver scientifically accurate, evidence-based answers in physics, biology, chemistry, astronomy, and technology.\n   - Highlight the \"why\" and \"how\" behind scientific phenomena.\n   - Cite standard formulas, scientific principles, and real-world experiments when helpful.\n\n3. Daily Life \u0026 Practical Guidance:\n   - Provide clear, actionable advice for productivity, time management, health habits, and decision-making.\n   - Maintain a helpful, empathetic, and constructive tone.\n   - Avoid definitive medical, legal, or financial diagnosis; instead, provide helpful general knowledge and recommend consulting professionals when appropriate.\n\nFormat your responses neatly using Markdown, bullet points, and bold text for easy reading.\n\"\"\"\n\n# Initialize Gemini Model\nmodel \u003d genai.GenerativeModel(\n    model_name\u003d\"gemini-1.5-flash\",\n    system_instruction\u003dSYSTEM_INSTRUCTION\n)\n\napp \u003d FastAPI(title\u003d\"Jupiter AI Service\")\n\n# Allow web access\napp.add_middleware(\n    CORSMiddleware,\n    allow_origins\u003d[\"*\"],\n    allow_credentials\u003dTrue,\n    allow_methods\u003d[\"*\"],\n    allow_headers\u003d[\"*\"],\n)\n\nclass ChatRequest(BaseModel):\n    message: str\n\n@app.post(\"/api/chat\")\nasync def chat(request: ChatRequest):\n    try:\n        response \u003d model.generate_content(request.message)\n        return {\"reply\": response.text}\n    except Exception as e:\n        raise HTTPException(status_code\u003d500, detail\u003dstr(e))\n\n# Serve the frontend interface\napp.mount(\"/\", StaticFiles(directory\u003d\"static\", html\u003dTrue), name\u003d\"static\")\n\nif __name__ \u003d\u003d \"__main__\":\n    import uvicorn\n    uvicorn.run(\"main:app\", host\u003d\"0.0.0.0\", port\u003d8000, reload\u003dTrue)\n```\n\n---\n\n### Step 4: Web Interface (`static/index.html`)\n\nCreate a clean, responsive chat page with pre-set buttons for Education, Science, and Daily Life:\n\n```html\n\u003c!DOCTYPE html\u003e\n\u003chtml lang\u003d\"en\"\u003e\n\u003chead\u003e\n    \u003cmeta charset\u003d\"UTF-8\"\u003e\n    \u003cmeta name\u003d\"viewport\" content\u003d\"width\u003ddevice-width, initial-scale\u003d1.0\"\u003e\n    \u003ctitle\u003eJupiter AI - Education, Science \u0026 Daily Life\u003c/title\u003e\n    \u003cstyle\u003e\n        * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, \u0027Segoe UI\u0027, Roboto, sans-serif; }\n        body { background: #0f172a; color: #f8fafc; display: flex; flex-direction: column; height: 100vh; }\n        header { padding: 1rem 2rem; background: #1e293b; border-bottom: 1px solid #334155; display: flex; justify-content: space-between; align-items: center; }\n        header h1 { font-size: 1.3rem; color: #38bdf8; }\n        .tags { display: flex; gap: 0.5rem; }\n        .tag { font-size: 0.75rem; background: #334155; padding: 0.2rem 0.6rem; border-radius: 999px; color: #94a3b8; }\n        \n        #chat-window { flex: 1; overflow-y: auto; padding: 1.5rem; display: flex; flex-direction: column; gap: 1rem; }\n        .msg { max-width: 80%; padding: 0.8rem 1.2rem; border-radius: 12px; line-height: 1.5; font-size: 0.95rem; white-space: pre-wrap; }\n        .user { align-self: flex-end; background: #2563eb; color: white; border-bottom-right-radius: 2px; }\n        .bot { align-self: flex-start; background: #1e293b; border: 1px solid #334155; color: #e2e8f0; border-bottom-left-radius: 2px; }\n        \n        .quick-prompts { display: flex; gap: 0.5rem; padding: 0.5rem 1.5rem; overflow-x: auto; }\n        .quick-btn { background: #1e293b; border: 1px solid #475569; color: #cbd5e1; padding: 0.4rem 0.8rem; border-radius: 6px; cursor: pointer; font-size: 0.8rem; white-space: nowrap; }\n        .quick-btn:hover { background: #334155; }\n\n        footer { padding: 1rem 1.5rem; background: #1e293b; border-top: 1px solid #334155; }\n        form { display: flex; gap: 0.5rem; }\n        input { flex: 1; padding: 0.8rem; border-radius: 8px; border: 1px solid #475569; background: #0f172a; color: white; outline: none; }\n        input:focus { border-color: #38bdf8; }\n        button#send { background: #38bdf8; color: #0f172a; border: none; padding: 0.8rem 1.5rem; border-radius: 8px; font-weight: bold; cursor: pointer; }\n        button#send:disabled { opacity: 0.5; }\n    \u003c/style\u003e\n\u003c/head\u003e\n\u003cbody\u003e\n\n\u003cheader\u003e\n    \u003ch1\u003e🪐 Jupiter AI\u003c/h1\u003e\n    \u003cdiv class\u003d\"tags\"\u003e\n        \u003cspan class\u003d\"tag\"\u003e📚 Education\u003c/span\u003e\n        \u003cspan class\u003d\"tag\"\u003e🔬 Science\u003c/span\u003e\n        \u003cspan class\u003d\"tag\"\u003e💡 Daily Life\u003c/span\u003e\n    \u003c/div\u003e\n\u003c/header\u003e\n\n\u003cdiv id\u003d\"chat-window\"\u003e\n    \u003cdiv class\u003d\"msg bot\"\u003eHello! I am Jupiter AI. Ask me anything about science concepts, study topics, or daily life problem-solving.\u003c/div\u003e\n\u003c/div\u003e\n\n\u003cdiv class\u003d\"quick-prompts\"\u003e\n    \u003cbutton class\u003d\"quick-btn\" onclick\u003d\"sendPrompt(\u0027Explain Quantum Entanglement in simple words\u0027)\"\u003e🔬 Quantum Physics\u003c/button\u003e\n    \u003cbutton class\u003d\"quick-btn\" onclick\u003d\"sendPrompt(\u0027How can I study effectively for 4 hours without burnout?\u0027)\"\u003e📚 Study Technique\u003c/button\u003e\n    \u003cbutton class\u003d\"quick-btn\" onclick\u003d\"sendPrompt(\u0027How do I build a consistent morning routine?\u0027)\"\u003e💡 Daily Routine\u003c/button\u003e\n\u003c/div\u003e\n\n\u003cfooter\u003e\n    \u003cform id\u003d\"chat-form\"\u003e\n        \u003cinput type\u003d\"text\" id\u003d\"user-input\" placeholder\u003d\"Ask Jupiter anything...\" autocomplete\u003d\"off\" required /\u003e\n        \u003cbutton type\u003d\"submit\" id\u003d\"send\"\u003eSend\u003c/button\u003e\n    \u003c/form\u003e\n\u003c/footer\u003e\n\n\u003cscript\u003e\n    const form \u003d document.getElementById(\u0027chat-form\u0027);\n    const input \u003d document.getElementById(\u0027user-input\u0027);\n    const chatWindow \u003d document.getElementById(\u0027chat-window\u0027);\n    const sendBtn \u003d document.getElementById(\u0027send\u0027);\n\n    function appendMessage(text, sender) {\n        const div \u003d document.createElement(\u0027div\u0027);\n        div.className \u003d `msg ${sender}`;\n        div.innerText \u003d text;\n        chatWindow.appendChild(div);\n        chatWindow.scrollTop \u003d chatWindow.scrollHeight;\n    }\n\n    async function handleMessage(text) {\n        appendMessage(text, \u0027user\u0027);\n        sendBtn.disabled \u003d true;\n        \n        try {\n            const res \u003d await fetch(\u0027/api/chat\u0027, {\n                method: \u0027POST\u0027,\n                headers: { \u0027Content-Type\u0027: \u0027application/json\u0027 },\n                body: JSON.stringify({ message: text })\n            });\n            const data \u003d await res.json();\n            appendMessage(data.reply || \"Sorry, an error occurred.\", \u0027bot\u0027);\n        } catch (err) {\n            appendMessage(\"Error: Could not reach Jupiter AI server.\", \u0027bot\u0027);\n        } finally {\n            sendBtn.disabled \u003d false;\n        }\n    }\n\n    form.addEventListener(\u0027submit\u0027, (e) \u003d\u003e {\n        e.preventDefault();\n        const text \u003d input.value.trim();\n        if (!text) return;\n        input.value \u003d \u0027\u0027;\n        handleMessage(text);\n    });\n\n    function sendPrompt(promptText) {\n        handleMessage(promptText);\n    }\n\u003c/script\u003e\n\n\u003c/body\u003e\n\u003c/html\u003e\n```\n\n---\n\n### Step 5: Test Locally\n\n1. Install requirements:\n   ```bash\n   pip install -r requirements.txt\n   ```\n2. Start the service:\n   ```bash\n   python main.py\n   ```\n3. Open your browser and navigate to: `http://localhost:8000`\n\n---\n\n### Step 6: Deploy Online (Make it accessible worldwide)\n\nTo let anyone access Jupiter AI over the internet:\n\n1. **Push your code to GitHub:**\n   * Create a GitHub repository (e.g., `jupiter-ai`).\n   * Ensure your `.gitignore` contains `.env` so your API key remains secret.\n2. **Deploy for free on Render.com or Railway.app:**\n   * Create an account on **[Render](https://render.com/)**.\n   * Click **New Web Service** and link your GitHub repository.\n   * Set **Build Command:** `pip install -r requirements.txt`\n   * Set **Start Command:** `uvicorn main:app --host 0.0.0.0 --port $PORT`\n   * Under **Environment Variables**, add:\n     * Key: `GEMINI_API_KEY`\n     * Value: *(Your new, rotated Google API Key)*\n3. **Launch:** Render will provide you with a live URL (e.g., `https://jupiter-ai.onrender.com`) that anyone can use.",
+      "role": "model",
+      "finishReason": "STOP",
+      "tokenCount": 2920,
+      "parts": [{
+        "text": "To transform"
+      }, {
+        "text": " **Jupiter AI** into a full-fledged, public online AI service specializing in **Education, Science, and Daily Life**, you need"
+      }, {
+        "text": " three core layers:\n\n1. **AI Brain \u0026 Persona:** A system prompt that instructs the model to excel in tutoring"
+      }, {
+        "text": ", scientific explanation, and practical daily advice.\n2. **Backend Server:** An API (using Python \u0026 FastAPI) that securely connects"
+      }, {
+        "text": " to your Google Gemini API key without exposing it to users.\n3. **Frontend Web Interface:** A responsive chat UI accessible"
+      }, {
+        "text": " from any phone or computer browser.\n4. **Cloud Deployment:** Hosting it online (e.g., Render, Railway, or V"
+      }, {
+        "text": "ercel).\n\nHere is a complete, production-ready blueprint to build and launch Jupiter AI.\n\n---\n\n### Step 1: Project"
+      }, {
+        "text": " Folder Structure\n\nCreate a folder named `jupiter-ai` on your computer:\n\n```text\njupiter-ai/\n│\n├──"
+      }, {
+        "text": " .env                  # Stores your secret Google API key\n├── main.py               # Backend API server (FastAPI)\n├── requirements"
+      }, {
+        "text": ".txt      # Python dependencies\n└── static/\n    └── index.html        # Web chat interface\n```\n\n---\n\n###"
+      }, {
+        "text": " Step 2: Set Up Dependencies \u0026 Environment Variables\n\n1. Inside `requirements.txt`:\n```txt\nfastapi\nuv"
+      }, {
+        "text": "icorn\ngoogle-generativeai\npython-dotenv\n```\n\n2. Inside `.env` (**Put your regenerated"
+      }, {
+        "text": " Google API key here — never commit this file to public GitHub**):\n```env\nGEMINI_API_KEY\u003d"
+      }, {
+        "text": "your_regenerated_google_api_key_here\n```\n\n---\n\n### Step 3: Backend Server"
+      }, {
+        "text": " (`main.py`)\n\nThis code configures **Jupiter AI’s persona** for Education, Science, and Daily Life, and"
+      }, {
+        "text": " exposes an endpoint for your web interface.\n\n```python\nimport os\nfrom fastapi import FastAPI, HTTPException\nfrom fastapi.middleware"
+      }, {
+        "text": ".cors import CORSMiddleware\nfrom fastapi.staticfiles import StaticFiles\nfrom pydantic import BaseModel\nfrom"
+      }, {
+        "text": " dotenv import load_dotenv\nimport google.generativeai as genai\n\n# Load environment variables\nload_dotenv"
+      }, {
+        "text": "()\napi_key \u003d os.getenv(\"GEMINI_API_KEY\")\n\nif not api_key:\n    "
+      }, {
+        "text": "raise ValueError(\"GEMINI_API_KEY is missing from .env file\")\n\ngenai.configure(api_key\u003dapi_"
+      }, {
+        "text": "key)\n\n# Define Jupiter AI\u0027s specialized system instruction\nSYSTEM_INSTRUCTION \u003d \"\"\"\nYou are Jupiter AI, an advanced, empathetic"
+      }, {
+        "text": ", and engaging AI assistant. \nYour core pillars are:\n\n1. Education:\n   - Act as an encouraging tutor"
+      }, {
+        "text": ".\n   - Break down complex subjects into simple, bite-sized analogies.\n   - Provide step-by-step problem-"
+      }, {
+        "text": "solving rather than just direct answers.\n   - Tailor explanations to the user\u0027s level (student, professional, or curious"
+      }, {
+        "text": " beginner).\n\n2. Science:\n   - Deliver scientifically accurate, evidence-based answers in physics, biology, chemistry, astronomy"
+      }, {
+        "text": ", and technology.\n   - Highlight the \"why\" and \"how\" behind scientific phenomena.\n   - Cite standard"
+      }, {
+        "text": " formulas, scientific principles, and real-world experiments when helpful.\n\n3. Daily Life \u0026 Practical Guidance:\n   - Provide"
+      }, {
+        "text": " clear, actionable advice for productivity, time management, health habits, and decision-making.\n   - Maintain a helpful, empathetic, and"
+      }, {
+        "text": " constructive tone.\n   - Avoid definitive medical, legal, or financial diagnosis; instead, provide helpful general knowledge and recommend consulting professionals when"
+      }, {
+        "text": " appropriate.\n\nFormat your responses neatly using Markdown, bullet points, and bold text for easy reading.\n\"\"\"\n\n#"
+      }, {
+        "text": " Initialize Gemini Model\nmodel \u003d genai.GenerativeModel(\n    model_name\u003d\"gemini-1.5"
+      }, {
+        "text": "-flash\",\n    system_instruction\u003dSYSTEM_INSTRUCTION\n)\n\napp \u003d FastAPI(title\u003d\"Jupiter AI"
+      }, {
+        "text": " Service\")\n\n# Allow web access\napp.add_middleware(\n    CORSMiddleware,\n    allow"
+      }, {
+        "text": "_origins\u003d[\"*\"],\n    allow_credentials\u003dTrue,\n    allow_methods\u003d[\"*\"],\n    allow"
+      }, {
+        "text": "_headers\u003d[\"*\"],\n)\n\nclass ChatRequest(BaseModel):\n    message: str\n\n@app.post(\"/api"
+      }, {
+        "text": "/chat\")\nasync def chat(request: ChatRequest):\n    try:\n        response \u003d model.generate_"
+      }, {
+        "text": "content(request.message)\n        return {\"reply\": response.text}\n    except Exception as e:\n        raise HTTPException(status"
+      }, {
+        "text": "_code\u003d500, detail\u003dstr(e))\n\n# Serve the frontend interface\napp.mount(\"/\","
+      }, {
+        "text": " StaticFiles(directory\u003d\"static\", html\u003dTrue), name\u003d\"static\")\n\nif __name__ \u003d\u003d \"__main__\":"
+      }, {
+        "text": "\n    import uvicorn\n    uvicorn.run(\"main:app\", host\u003d\"0.0.0"
+      }, {
+        "text": ".0\", port\u003d8000, reload\u003dTrue)\n```\n\n---\n\n### Step 4:"
+      }, {
+        "text": " Web Interface (`static/index.html`)\n\nCreate a clean, responsive chat page with pre-set buttons for Education, Science, and"
+      }, {
+        "text": " Daily Life:\n\n```html\n\u003c!DOCTYPE html\u003e\n\u003chtml lang\u003d\"en\"\u003e\n\u003chead\u003e\n    "
+      }, {
+        "text": "\u003cmeta charset\u003d\"UTF-8\"\u003e\n    \u003cmeta name\u003d\"viewport\" content\u003d\"width\u003ddevice-width,"
+      }, {
+        "text": " initial-scale\u003d1.0\"\u003e\n    \u003ctitle\u003eJupiter AI - Education, Science \u0026 Daily Life\u003c/title"
+      }, {
+        "text": "\u003e\n    \u003cstyle\u003e\n        * { box-sizing: border-box; margin: 0; padding:"
+      }, {
+        "text": " 0; font-family: -apple-system, BlinkMacSystemFont, \u0027Segoe UI\u0027, Roboto, sans"
+      }, {
+        "text": "-serif; }\n        body { background: #0f172a; color: #f8fafc; display"
+      }, {
+        "text": ": flex; flex-direction: column; height: 100vh; }\n        header { padding: 1rem"
+      }, {
+        "text": " 2rem; background: #1e293b; border-bottom: 1px solid #334"
+      }, {
+        "text": "155; display: flex; justify-content: space-between; align-items: center; }\n        header"
+      }, {
+        "text": " h1 { font-size: 1.3rem; color: #38bdf8; }\n        ."
+      }, {
+        "text": "tags { display: flex; gap: 0.5rem; }\n        .tag { font-size: 0."
+      }, {
+        "text": "75rem; background: #334155; padding: 0.2rem 0."
+      }, {
+        "text": "6rem; border-radius: 999px; color: #94a3b8; }\n        "
+      }, {
+        "text": "\n        #chat-window { flex: 1; overflow-y: auto; padding: 1.5rem; display:"
+      }, {
+        "text": " flex; flex-direction: column; gap: 1rem; }\n        .msg { max-width:"
+      }, {
+        "text": " 80%; padding: 0.8rem 1.2rem; border-radius: 12"
+      }, {
+        "text": "px; line-height: 1.5; font-size: 0.95rem; white-"
+      }, {
+        "text": "space: pre-wrap; }\n        .user { align-self: flex-end; background: #2563eb"
+      }, {
+        "text": "; color: white; border-bottom-right-radius: 2px; }\n        .bot { align-self: flex-"
+      }, {
+        "text": "start; background: #1e293b; border: 1px solid #33415"
+      }, {
+        "text": "5; color: #e2e8f0; border-bottom-left-radius: 2px; }\n        \n        "
+      }, {
+        "text": ".quick-prompts { display: flex; gap: 0.5rem; padding: 0.5rem 1.5"
+      }, {
+        "text": "rem; overflow-x: auto; }\n        .quick-btn { background: #1e293b; border"
+      }, {
+        "text": ": 1px solid #475569; color: #cbd5e1; padding: 0.4rem"
+      }, {
+        "text": " 0.8rem; border-radius: 6px; cursor: pointer; font-size: 0.8rem"
+      }, {
+        "text": "; white-space: nowrap; }\n        .quick-btn:hover { background: #3341"
+      }, {
+        "text": "55; }\n\n        footer { padding: 1rem 1.5rem; background: #1e2"
+      }, {
+        "text": "93b; border-top: 1px solid #334155; }\n        form"
+      }, {
+        "text": " { display: flex; gap: 0.5rem; }\n        input { flex: 1; padding"
+      }, {
+        "text": ": 0.8rem; border-radius: 8px; border: 1px solid #4755"
+      }, {
+        "text": "69; background: #0f172a; color: white; outline: none; }\n        "
+      }, {
+        "text": "input:focus { border-color: #38bdf8; }\n        button#send { background: #3"
+      }, {
+        "text": "8bdf8; color: #0f172a; border: none; padding: 0."
+      }, {
+        "text": "8rem 1.5rem; border-radius: 8px; font-weight: bold; cursor: pointer; }"
+      }, {
+        "text": "\n        button#send:disabled { opacity: 0.5; }\n    \u003c/style\u003e\n\u003c/head\u003e\n\u003cbody\u003e"
+      }, {
+        "text": "\n\n\u003cheader\u003e\n    \u003ch1\u003e🪐 Jupiter AI\u003c/h1\u003e\n    \u003cdiv class\u003d\"tags\"\u003e\n        \u003cspan class\u003d\"tag"
+      }, {
+        "text": "\"\u003e📚 Education\u003c/span\u003e\n        \u003cspan class\u003d\"tag\"\u003e🔬 Science\u003c/span\u003e\n        \u003cspan class\u003d\"tag\"\u003e💡"
+      }, {
+        "text": " Daily Life\u003c/span\u003e\n    \u003c/div\u003e\n\u003c/header\u003e\n\n\u003cdiv id\u003d\"chat-window\"\u003e\n    \u003cdiv class"
+      }, {
+        "text": "\u003d\"msg bot\"\u003eHello! I am Jupiter AI. Ask me anything about science concepts, study topics, or daily life problem"
+      }, {
+        "text": "-solving.\u003c/div\u003e\n\u003c/div\u003e\n\n\u003cdiv class\u003d\"quick-prompts\"\u003e\n    \u003cbutton class\u003d\"quick-"
+      }, {
+        "text": "btn\" onclick\u003d\"sendPrompt(\u0027Explain Quantum Entanglement in simple words\u0027)\"\u003e🔬 Quantum Physics\u003c/button\u003e\n    "
+      }, {
+        "text": "\u003cbutton class\u003d\"quick-btn\" onclick\u003d\"sendPrompt(\u0027How can I study effectively for 4 hours without burnout"
+      }, {
+        "text": "?\u0027)\"\u003e📚 Study Technique\u003c/button\u003e\n    \u003cbutton class\u003d\"quick-btn\" onclick\u003d\"sendPrompt(\u0027How do I build a consistent"
+      }, {
+        "text": " morning routine?\u0027)\"\u003e💡 Daily Routine\u003c/button\u003e\n\u003c/div\u003e\n\n\u003cfooter\u003e\n    \u003cform id\u003d\"chat-form\"\u003e\n        "
+      }, {
+        "text": "\u003cinput type\u003d\"text\" id\u003d\"user-input\" placeholder\u003d\"Ask Jupiter anything...\" autocomplete\u003d\"off\" required /\u003e"
+      }, {
+        "text": "\n        \u003cbutton type\u003d\"submit\" id\u003d\"send\"\u003eSend\u003c/button\u003e\n    \u003c/form\u003e\n\u003c/footer\u003e\n\n\u003cscript\u003e\n    "
+      }, {
+        "text": "const form \u003d document.getElementById(\u0027chat-form\u0027);\n    const input \u003d document.getElementById(\u0027user-input\u0027);\n"
+      }, {
+        "text": "    const chatWindow \u003d document.getElementById(\u0027chat-window\u0027);\n    const sendBtn \u003d document.getElementById(\u0027send"
+      }, {
+        "text": "\u0027);\n\n    function appendMessage(text, sender) {\n        const div \u003d document.createElement(\u0027div\u0027);\n        div."
+      }, {
+        "text": "className \u003d `msg ${sender}`;\n        div.innerText \u003d text;\n        chatWindow.appendChild(div);"
+      }, {
+        "text": "\n        chatWindow.scrollTop \u003d chatWindow.scrollHeight;\n    }\n\n    async function handleMessage(text) {\n        append"
+      }, {
+        "text": "Message(text, \u0027user\u0027);\n        sendBtn.disabled \u003d true;\n        \n        try {\n            "
+      }, {
+        "text": "const res \u003d await fetch(\u0027/api/chat\u0027, {\n                method: \u0027POST\u0027,\n                headers: { \u0027"
+      }, {
+        "text": "Content-Type\u0027: \u0027application/json\u0027 },\n                body: JSON.stringify({ message: text })\n            });\n"
+      }, {
+        "text": "            const data \u003d await res.json();\n            appendMessage(data.reply || \"Sorry, an error occurred"
+      }, {
+        "text": ".\", \u0027bot\u0027);\n        } catch (err) {\n            appendMessage(\"Error: Could not reach Jupiter AI server.\", \u0027bot\u0027);"
+      }, {
+        "text": "\n        } finally {\n            sendBtn.disabled \u003d false;\n        }\n    }\n\n    form."
+      }, {
+        "text": "addEventListener(\u0027submit\u0027, (e) \u003d\u003e {\n        e.preventDefault();\n        const text \u003d input.value."
+      }, {
+        "text": "trim();\n        if (!text) return;\n        input.value \u003d \u0027\u0027;\n        handleMessage(text);"
+      }, {
+        "text": "\n    });\n\n    function sendPrompt(promptText) {\n        handleMessage(promptText);\n    }"
+      }, {
+        "text": "\n\u003c/script\u003e\n\n\u003c/body\u003e\n\u003c/html\u003e\n```\n\n---\n\n### Step 5: Test Locally\n\n1. Install"
+      }, {
+        "text": " requirements:\n   ```bash\n   pip install -r requirements.txt\n   ```\n2. Start the service:\n   ```bash"
+      }, {
+        "text": "\n   python main.py\n   ```\n3. Open your browser and navigate to: `http://localhost:8"
+      }, {
+        "text": "000`\n\n---\n\n### Step 6: Deploy Online (Make it accessible worldwide)\n\nTo let anyone access Jupiter"
+      }, {
+        "text": " AI over the internet:\n\n1. **Push your code to GitHub:**\n   * Create a GitHub repository (e.g.,"
+      }, {
+        "text": " `jupiter-ai`).\n   * Ensure your `.gitignore` contains `.env` so your API key remains secret.\n2"
+      }, {
+        "text": ". **Deploy for free on Render.com or Railway.app:**\n   * Create an account on **[Render]("
+      }, {
+        "text": "https://render.com/)**.\n   * Click **New Web Service** and link your GitHub repository.\n   * Set"
+      }, {
+        "text": " **Build Command:** `pip install -r requirements.txt`\n   * Set **Start Command:** `uvicorn"
+      }, {
+        "text": " main:app --host 0.0.0.0 --port $PORT`\n   * Under **Environment Variables**, add"
+      }, {
+        "text": ":\n     * Key: `GEMINI_API_KEY`\n     * Value: *(Your new, rotated"
+      }, {
+        "text": " Google API Key)*\n3. **Launch:** Render will provide you with a live URL (e.g., `https://jupiter-ai"
+      }, {
+        "text": ".onrender.com`) that anyone can use."
+      }, {
+        "text": "",
+        "thoughtSignature": "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"
+      }],
+      "createTime": "2026-10-21T09:40:59.556Z"
+    }],
+    "pendingInputs": [{
+      "text": "",
+      "role": "user"
+    }]
+  }
+}
